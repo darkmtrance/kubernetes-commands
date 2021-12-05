@@ -49,12 +49,15 @@ kubectl delete -f webapp.yaml
 
 ```
 kubectl run redis --image=redis123 --dry-run=client -o yaml >> redis.yaml
-
 kubectl apply -f redis.yaml
+```
 
-kubectl get pods
+- Ejecute el siguiente comando para verificar el estado del pod
 
 ```
+kubectl describe pod redis
+```
+
 
 - Ejecute el siguiente comando para editar el pod redis, modificando la imagen redis123 a redis
 
