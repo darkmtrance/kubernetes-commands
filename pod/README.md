@@ -28,9 +28,7 @@ kubectl get pods -o wide
 
 ```
 kubectl apply -f webapp.yaml
-
 kubectl get pods
-
 ```
 
 - Ejecute el siguiente comando para eliminar el pod 
@@ -58,12 +56,8 @@ kubectl apply -f redis.yaml
 kubectl describe pod redis
 ```
 
-
 - Ejecute el siguiente comando para editar el pod redis, modificando la imagen redis123 a redis
-
 
 ```
 kubectl edit pod redis
 ```
-
-
